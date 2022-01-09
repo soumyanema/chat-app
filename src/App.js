@@ -1,8 +1,9 @@
-import './App.css';
-import 'rsuite/dist/rsuite.min.css';
+import React from 'react';
 import './styles/main.scss';
+import 'rsuite/dist/styles/rsuite-default.css';
+
 function App() {
-  return <div></div>;
+  return <div>hi</div>;
 }
 
 export default App;
