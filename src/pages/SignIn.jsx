@@ -42,7 +42,7 @@ const SignIn = () => {
                   <Icon icon="facebook" /> Continue with Facebook
                 </Button>
                 <Button block color="green" onClick={onGoogleSignIn}>
-                  <Icon icon="google" /> Continue with Doogle
+                  <Icon icon="google" /> Continue with Google
                 </Button>
               </div>
             </Panel>
