@@ -6,6 +6,7 @@ import PresenceDot from '../../PresenceDot';
 import ProfileInfoBtnModal from './ProfileInfoBtnModal';
 import { useCurrentRoom } from '../../../context/current-room.context';
 import { auth } from '../../../misc/firebase';
+import IconBtnControl from './IconBtnControl';
 
 const MessageItem = ({ message, handleAdmin }) => {
   const { author, createdAt, text } = message;
@@ -43,6 +44,14 @@ const MessageItem = ({ message, handleAdmin }) => {
         <Timeago
           datetime={createdAt}
           className="text-black-45 font-normal ml-2"
+        />
+        <IconBtnControl
+          {...(true ? { color: 'red' } : {})}
+          isVisible="true"
+          iconName="heart"
+          toolTip="Like this message"
+          onClick={() => {}}
+          badgeContent={5}
         />
       </div>
       <div className="word-break-all">{text}</div>
