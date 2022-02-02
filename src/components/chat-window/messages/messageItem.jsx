@@ -72,7 +72,7 @@ const MessageItem = ({ message, handleAdmin, handleLike, handleDelete }) => {
           {...(isLiked ? { color: 'red' } : {})}
           isVisible={canShowIcons}
           iconName="heart"
-          toolTip="Like this message"
+          toolTip={isLiked ? 'dislike this message' : 'like this message'}
           onClick={() => handleLike(message.id)}
           badgeContent={likeCount}
         />

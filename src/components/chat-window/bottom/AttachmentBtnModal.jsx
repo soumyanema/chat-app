@@ -58,7 +58,7 @@ const AttachmentBtnModal = ({ afterUpload }) => {
   return (
     <>
       <InputGroup.Button onClick={open}>
-        <Icon icon="attachment" />
+        <Icon icon="upload2" />
       </InputGroup.Button>
 
       <Modal show={isOpen} onHide={close}>
